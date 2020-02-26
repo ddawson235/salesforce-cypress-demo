@@ -1,11 +1,12 @@
-describe('Non Customer Complaint Page', function () {
+import * as faker from 'faker';
+describe('New Account Creation', function () {
     it('Creates new case', function () {
         cy.login();
         cy.visit('https://energy-ruby-7363-dev-ed.lightning.force.com/lightning/o/Account/list?filterName=Recent')
         //cy.get('.slds-truncate').contains('Cases').should('be.visible').click();
         cy.get('.forceActionLink[title=New]').should('be.visible').click();
         cy.wait(3000);
-        cy.get('.uiLabel').contains('Account Name').get('input[type=text]').eq(1).type('Cypress Automation Test');
+        cy.get('.uiLabel').contains('Account Name').get('input[type=text]').eq(1).type(faker.company.companyName());
         cy.get('.slds-button[title=Save]').click();
         //Populate Personal Information
         /* cy.get('.topdown-radio--label').contains('Non-Customer Complaint').click();
