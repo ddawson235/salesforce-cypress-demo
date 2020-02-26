@@ -1,7 +1,9 @@
 {
+    "baseUrl": "",
     "env": {
-        "username": "test-n8k2jta9nhss@example.com",
-        "password": "Admin!123"
+        "loginUrl": "",
+        "username": "",
+        "password": ""
     },
     "viewportWidth": 1300,
     "viewportHeight": 660,
