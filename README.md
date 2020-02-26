@@ -1,16 +1,21 @@
 # Salesforce Cypress Automation
-*Salesforce automation test capability*
 
-NPM packages used (installed as dev dependencies):
-```
-cypress
-typescript
-faker
-```
+This is a simple demonstration to show how to utilise Cypress and Salesforce DX to build out an integration testing capability.
 
-**Note: To install the NPM packages on the ANZ network, proxy settings need to be configured. The below articles can assist you with this. The top article also handles the setup of Salesforce.**
+### Sample Test Case
 
-- [Salesforce Setup (Initial Proxy Setup)](https://confluence.service.anz/display/ABT/How+to+get+setup+your+laptop+for+Salesforce+development)
-- [NPM Proxy setup](https://confluence.service.anz/display/~yero/NPM+Proxy+Setting)
+- Create an Account
 
-Once you have configured your proxy settings. Simply clone this repo and run `npm install` and the process should work without any issues.
+The test case provided opens up a scratch org and creates an account.
+
+### Getting Started
+
+Firstly, this project assume you
+
+- Already have Salesforce CLI installed
+- Already have a scratch org created
+- Have the scratch org set as your default
+
+To run the demonstration, simply open a terminal in the project folder and run:
+
+    cypress run --headed

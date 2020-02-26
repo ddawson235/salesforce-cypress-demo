@@ -1,8 +1,4 @@
 {
-  "env": {
-    "username": "test-0cx1p9hwqwbg@example.com",
-    "password": "mp_9S3vJBP"
-  },
   "viewportWidth": 1300,
   "viewportHeight": 660,
   "testFiles": "**/*.ts",
