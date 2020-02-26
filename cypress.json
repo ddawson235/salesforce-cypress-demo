@@ -1,11 +1,11 @@
 {
-    "env": {
-        "username": "test-n8k2jta9nhss@example.com",
-        "password": "Admin!123"
-    },
-    "viewportWidth": 1300,
-    "viewportHeight": 660,
-    "testFiles": "**/*.ts",
-    "pluginsFile": "cypress/plugins/index.js",
-    "supportFile": "cypress/support/index.ts"
+  "env": {
+    "username": "test-0cx1p9hwqwbg@example.com",
+    "password": "mp_9S3vJBP"
+  },
+  "viewportWidth": 1300,
+  "viewportHeight": 660,
+  "testFiles": "**/*.ts",
+  "pluginsFile": "cypress/plugins/index.js",
+  "supportFile": "cypress/support/index.ts"
 }
