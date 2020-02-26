@@ -25,15 +25,22 @@
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 
 // Cypress.Commands.add('login', () => {
-    // return cy.request(`/?un=${Cypress.env('username')}&pw=${Cypress.env('password')}`);
+// return cy.request(`/?un=${Cypress.env('username')}&pw=${Cypress.env('password')}`);
 // });
 
 declare namespace Cypress {
-    interface Chainable<Subject> {
-        login(): Cypress.Chainable<any>;
-    }
+  interface Chainable<Subject> {
+    login(): Cypress.Chainable<any>;
+  }
 }
-  
-Cypress.Commands.add("login",(): Cypress.Chainable<any> => {
-    return cy.request(`https://test.salesforce.com/?un=${Cypress.env('username')}&pw=${Cypress.env('password')}`);
-});
+
+Cypress.Commands.add(
+  "login",
+  (): Cypress.Chainable<any> => {
+    return cy.request(
+      `https://test.salesforce.com/?un=${Cypress.env(
+        "username"
+      )}&pw=${Cypress.env("password")}`
+    );
+  }
+);
