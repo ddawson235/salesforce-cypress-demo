@@ -1,6 +1,6 @@
 import * as faker from "faker";
 describe("New Account Creation", function() {
-  let instanceUrl:any;
+  let instanceUrl:String;
   before(function() {
     // runs once before all tests in the block
     cy.exec(
